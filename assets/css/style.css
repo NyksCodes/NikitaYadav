@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #140808;
+  color: #fff;
   position: relative;
   background: transparent;
 }
@@ -18,13 +18,15 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #011120;
+  background: #010e1b; /* Ensure this is applied */
   background-size: cover;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
+  z-index: -1; /* Ensure it stays behind other elements */
 }
+
 
 @media (min-width: 1024px) {
   body::before {
